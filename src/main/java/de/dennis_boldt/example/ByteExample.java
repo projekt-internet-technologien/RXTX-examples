@@ -13,10 +13,10 @@ public class ByteExample implements Observer {
 	@Option(name="--ports",usage="Set USB ports")
     public String ports = null;
 
-	@Option(name="--rxtxlib",usage="Set RXTX lib")
+	@Option(name="--rxtxlib",usage="Set RXTX lib (default: /usr/lib/jni)")
     public String rxtxlib = "/usr/lib/jni";
 
-	@Option(name="--baud",usage="Set baud rate")
+	@Option(name="--baud",usage="Set baud rate (default: 9600)")
     public int baud = 9600;
 	
 	public ByteExample(String[] args) throws NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException {
